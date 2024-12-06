@@ -2,14 +2,14 @@ Card 1
 Question: What magical device does Hermione use to attend multiple classes in "The Prisoner of Azkaban"?
 Answer:Time Turner
 
-Card 1
+Card 2
 Question: What is Voldemort’s real name?
 Answer: Tom Marvolo Riddle
 
-Card 1
+Card 3
 Question: What is the mascot of Ravenclaw House?
 Answer: A raven
 
-Card 1
+Card 4
 Question: Which famous Triwizard champion represented Hufflepuff House?
 Answer: Cedric Diggory
