@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="card">1</div>
+  <div class="card">2</div>
+  <div class="card">3</div>
+  <div class="card">4</div>
+</div>
+
+==========
+
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+==========
+
+What magical device does Hermione use to attend multiple classes in "The Prisoner of Azkaban"?
+Answer: Time Turner
+
+==========
+
+<div class="card">
+  <input type="checkbox" id="card2" hidden />
+  <div class="front">
+    <p>What is Voldemort’s real name?</p>
+    <label for="card2">Show Answer</label>
+  </div>
+  
+  <div class="back">
+    <p>Answer: Tom Marvolo Riddle</p>
+    <label for="card2">Back to Question</label>
+  </div>
+</div>
+
+<div class="card">
+  <input type="checkbox" id="card3" hidden />
+  <div class="front">
+    <p>What is the mascot of Ravenclaw House?</p>
+    <label for="card3">Show Answer</label>
+  </div>
+  
+  <div class="back">
+    <p>Answer: A raven</p>
+    <label for="card3">Back to Question</label>
+  </div>
+</div>
+
+<div class="card">
+  <input type="checkbox" id="card4" hidden />
+  <div class="front">
+    <p>Which famous Triwizard champion represented Hufflepuff House?</p>
+    <label for="card4">Show Answer</label>
+  </div>
+  
+  <div class="back">
+    <p>Answer: Cedric Diggory</p>
+    <label for="card4">Back to Question</label>
+  </div>
+</div>
