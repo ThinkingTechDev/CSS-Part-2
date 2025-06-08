@@ -1,109 +1,106 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-    font-family: "Roboto", sans-serif;
     margin: 0;
+    background-color: #f8f9fa;
     box-sizing: border-box;
-    background-image: url(./images/background.jpg);
-    background-size: cover;
-    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
 }
 
 .container {
-    width: 650px;
-    height: 650px;
-    padding: 10px;
+    width: 700px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
-    position: relative;
     width: 230px;
     height: 300px;
-    text-align: center;
-    perspective: 1000px;
-}
-.card .back {
-    transform: rotateY(180deg);
-}
-
-.card .front,
-.card .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     background-size: cover;
     background-position: center;
-    transition: transform 0.6s;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
-.card:nth-child(1) .back {
+.card:nth-child(1) {
     background-image: url(./images/gryffindor.jpg);
 }
-.card:nth-child(2) .back {
+
+.card:nth-child(2) {
     background-image: url(./images/slytherin.jpg);
 }
-.card:nth-child(3) .back {
+
+.card:nth-child(3) {
     background-image: url(./images/ravenclaw.jpg);
 }
-.card:nth-child(4) .back {
+
+.card:nth-child(4) {
     background-image: url(./images/hufflepuff.jpg);
 }
 
-.card .front {
-    background-image: url(./images/paper.jpg);
+.card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.card .front p {
-    font-size: 20px;
-    margin: auto;
+.question {
+    margin: 0;
+    font-size: 18px;
     text-shadow: 1px 1px 2px gray;
-    padding: 20px;
 }
 
-.card .back p {
+.answer {
     font-size: 15px;
     font-weight: 500;
+    opacity: 0;
+    transition: 1s ease all;
 }
 
-input[type="checkbox"]:checked ~ .front {
-    transform: rotateY(180deg);
-}
-input[type="checkbox"]:checked ~ .back {
-    transform: rotateY(360deg);
-}
-
-.button {
-    font-size: 12px;
+label {
+    font-size: 15px;
     color: rgb(63, 62, 62);
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-weight: 600;
     cursor: pointer;
-    text-align: center;
     align-self: flex-end;
-    text-decoration: underline;
     transition: 0.3s ease all;
 }
 
-.button:hover {
+label:hover {
+    transform: scale(1.1);
+}
+
+label:active {
     opacity: 0.6;
 }
 
-.button:active {
-    transform: scale(1.2);
+input[type="checkbox"]:checked ~ .content .answer {
+    opacity: 1;
 }
+
+/* label::after {
+    content: "Show Answer";
+    font-size: 12px;
+    color: rgb(63, 62, 62);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s ease all;
+} */
+
+/* input[type="checkbox"]:checked ~ label::after {
+    content: "Hide Answer";
+} */
