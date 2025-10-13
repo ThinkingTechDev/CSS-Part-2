@@ -2,8 +2,6 @@
 
 body {
     margin: 0;
-    background-color: #f8f9fa;
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
     display: flex;
@@ -29,10 +27,10 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
 }
 
 .card:nth-child(1) {
@@ -51,12 +49,6 @@ body {
     background-image: url(./images/hufflepuff.jpg);
 }
 
-.card .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 .question {
     margin: 0;
     font-size: 18px;
@@ -65,7 +57,6 @@ body {
 
 .answer {
     font-size: 15px;
-    font-weight: 500;
     opacity: 0;
     transition: 1s ease all;
 }
@@ -90,16 +81,3 @@ label:active {
 input[type="checkbox"]:checked ~ .content .answer {
     opacity: 1;
 }
-
-/* label::after {
-    content: "Show Answer";
-    font-size: 12px;
-    color: rgb(63, 62, 62);
-    text-decoration: underline;
-    cursor: pointer;
-    transition: 0.3s ease all;
-} */
-
-/* input[type="checkbox"]:checked ~ label::after {
-    content: "Hide Answer";
-} */
