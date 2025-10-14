@@ -65,8 +65,8 @@ label {
     font-size: 15px;
     color: rgb(63, 62, 62);
     font-weight: 600;
-    cursor: pointer;
     align-self: flex-end;
+    cursor: pointer;
     transition: 0.3s ease all;
 }
 
